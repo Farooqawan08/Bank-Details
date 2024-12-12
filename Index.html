@@ -6,69 +6,91 @@
     <title>Bank Details</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 20px;
-        }
-        .details {
-            display: inline-block;
-            text-align: left;
-            border: 1px solid #ccc;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
             padding: 20px;
-            border-radius: 10px;
-            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
         }
         h1 {
-            color: #333;
+            color: #1500c1;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            width: 90%;
+            max-width: 1200px;
+        }
+        .details {
+            background: linear-gradient(135deg, #01147e, #bb0101);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .details:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        .details p {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+        .details strong {
+            color: #f1c40f;
         }
     </style>
 </head>
 <body>
     <h1>Bank Details</h1>
-    <div class="details">
-        <p><strong>Bank Name:</strong> Meezan Bank</p>
-        <p><strong>Account Title:</strong> Muhammad Farooq</p>
-        <p><strong>Account Number:</strong> 02200110658867</p>
-        <p><strong>IBAN:</strong> PK22MEZN0002200110658867</p>
+    <div class="container">
+        <div class="details">
+            <p><strong>Bank Name:</strong> Meezan Bank</p>
+            <p><strong>Account Title:</strong> Muhammad Farooq</p>
+            <p><strong>Account Number:</strong> 02200110658867</p>
+            <p><strong>IBAN:</strong> PK22MEZN0002200110658867</p>
+        </div>
+        <div class="details">
+            <p><strong>Bank Name:</strong> Nayapay</p>
+            <p><strong>Account Title:</strong> Muhammad Farooq</p>
+            <p><strong>Account Number:</strong> 03174573886</p>
+            <p><strong>IBAN:</strong> PK22NAYA1234503174573886</p>
+        </div>
+        <div class="details">
+            <p><strong>Bank Name:</strong> SadaPay</p>
+            <p><strong>Account Title:</strong> Muhammad Farooq</p>
+            <p><strong>Account Number:</strong> 03247568595</p>
+            <p><strong>IBAN:</strong> PK95SADA0000003247568595</p>
+        </div>
+        <div class="details">
+            <p><strong>Bank Name:</strong> JS Bank</p>
+            <p><strong>Account Title:</strong> Muhammad Farooq</p>
+            <p><strong>Account Number:</strong> 03164435815</p>
+            <p><strong>IBAN:</strong> PK84JSBL9999903164435815</p>
+        </div>
+        <div class="details">
+            <p><strong>Bank Name:</strong> EasyPaisa</p>
+            <p><strong>Account Title:</strong> Muhammad Farooq</p>
+            <p><strong>Account Number:</strong> 03174573886</p>
+        </div>
+        <div class="details">
+            <p><strong>Bank Name:</strong> JazzCash</p>
+            <p><strong>Account Title:</strong> Muhammad Farooq</p>
+            <p><strong>Account Number:</strong> 03247568595</p>
+        </div>
+        <div class="details">
+            <p><strong>Bank Name:</strong> FirstPay</p>
+            <p><strong>Account Title:</strong> Muhammad Farooq</p>
+            <p><strong>Account Number:</strong> 03164435815</p>
+        </div>
     </div>
-    <div class="details">
-        <p><strong>Bank Name:</strong>Nayapay</p>
-        <p><strong>Account Title:</strong> Muhammad Farooq</p>
-        <p><strong>Account Number:</strong> 03174573886</p>
-        <p><strong>IBAN:</strong> PK22NAYA1234503174573886</p>
-    </div>
-
-    <div class="details">
-        <p><strong>Bank Name:</strong>SadaPay</p>
-        <p><strong>Account Title:</strong> Muhammad Farooq</p>
-        <p><strong>Account Number:</strong> 03247568595</p>
-        <p><strong>IBAN:</strong> PK95SADA0000003247568595</p>
-    </div>
-
-    <div class="details">
-        <p><strong>Bank Name:</strong>JS Bank</p>
-        <p><strong>Account Title:</strong> Muhammad Farooq</p>
-        <p><strong>Account Number:</strong> 03164435815</p>
-        <p><strong>IBAN:</strong> PK84JSBL9999903164435815</p>
-    </div>
-    
-    <div class="details">
-        <p><strong>Bank Name:</strong>EasyPaisa</p>
-        <p><strong>Account Title:</strong> Muhammad Farooq</p>
-        <p><strong>Account Number:</strong> 03174573886</p>
-    </div>
-
-    <div class="details">
-        <p><strong>Bank Name:</strong>JazzCash</p>
-        <p><strong>Account Title:</strong> Muhammad Farooq</p>
-        <p><strong>Account Number:</strong> 03247568595</p>
-    </div>
-
-    <div class="details">
-        <p><strong>Bank Name:</strong>FirstPay</p>
-        <p><strong>Account Title:</strong> Muhammad Farooq</p>
-        <p><strong>Account Number:</strong> 03164435815</p>
-    </div>
-
 </body>
 </html>
